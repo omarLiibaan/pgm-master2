@@ -1,0 +1,177 @@
+
+/* Upper Nav */
+.upper_nav{
+    width: 100%;
+    height: 100%;
+    background: rgb(2,130,192);
+    background: linear-gradient(90deg, rgba(2,130,192,1) 0%, rgba(1,191,215,1) 100%); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.upper_nav .six_sides_img{
+    position: absolute;
+    width: 5%;
+    left: 0;
+    opacity: .1;
+}
+
+.upper_nav a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.upper_nav .logo{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2.2em;
+    letter-spacing: 2px;
+    padding-left: 0px;
+}
+
+
+
+.upper_nav .logoutBtn{
+    border: 1px solid #fff;
+    padding: 0 30px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: .85em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-out;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.upper_nav .logoutBtn:hover{
+    background-color: #fff;
+    color: #01bed7;
+    transform: scale(.95);
+    box-shadow: 0 8px 10px -2px rgba(2, 141, 196, 1);
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #232e34;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 0px;
+    position: relative;
+    z-index: 50;
+    overflow-x: hidden;
+}
+
+nav .userlogged{
+    padding: 30px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .userlogged span{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(12,144,208);
+    background: linear-gradient(130deg, rgba(12,144,208,1) 0%, rgba(1,191,215,1) 44%); 
+    border: 1px solid rgba(255, 255, 255, .1);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+nav .userlogged div{
+    width: calc(100% - 60px);
+}
+
+nav h1{
+    margin: 0;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .9);
+}
+
+nav p{
+    margin: 0;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .4);
+}
+
+nav legend{
+    margin: 0;
+    font-size: .8rem;
+    color: rgba(255, 255, 255, .1);
+    letter-spacing: 1px;
+    margin-left: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 5;
+}
+
+nav a{
+    padding: 0 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    color: #656d71;
+    font-size: .88em;
+    position: relative;
+    z-index: 5;
+}
+
+nav a .curtain{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #1a22256e;
+    z-index: -1;
+    transition: width .2s ease-out;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+nav a:hover .curtain{
+    width: 100%;
+
+}
+
+nav .activeItem{
+    background-color: #1a2225;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    border-left: 6px solid #82c91e;
+}
+
+nav .six_sides_img{
+    position: absolute;
+    z-index: -2;
+    bottom: 0;
+    height: 40%;
+    opacity: .03;
+}
